@@ -2,6 +2,9 @@
 
 A GenAI-powered solution that generates an up-to-date calendar of sports tournaments using TheSportsDB API with AI-generated summaries.
 
+## Explanation of project
+**[Explanation video](https://www.youtube.com/watch?v=retKzasVK9Q)** 
+
 ## Live Demo
 
 **[View Live Application](https://nikitasingh13-sports-calender-app-pohe5d.streamlit.app/ )** 
