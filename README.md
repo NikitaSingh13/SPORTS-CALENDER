@@ -1,16 +1,12 @@
 # GenAI Sports Tournament Calendar
 
-A GenAI-powered solution that generates an up-to-date calendar of sports tournaments using TheSportsDB API with AI-generated summaries. Built as part of a GenAI intern assignment to demonstrate real-world data collection and AI integration.
+A GenAI-powered solution that generates an up-to-date calendar of sports tournaments using TheSportsDB API with AI-generated summaries.
 
-## 🎯 Assignment Overview
+## Live Demo
 
-This project fulfills the requirement to build a GenAI-powered solution for sports tournament calendar generation, covering multiple sports and competition levels with real-world upcoming tournament data.
+**[View Live Application](https://nikitasingh13-sports-calender-app-pohe5d.streamlit.app/ )** 
 
-## 🚀 Live Demo
-
-**[View Live Application](https://your-app-url.streamlit.app)** *(Replace with your actual deployed URL)*
-
-## ✨ Features
+## Features
 
 - **Real-time Data**: Fetches live upcoming tournaments from TheSportsDB API
 - **AI-Powered Summaries**: Uses transformers (DistilBART) to generate tournament summaries (max 50 words)
@@ -20,7 +16,7 @@ This project fulfills the requirement to build a GenAI-powered solution for spor
 - **Dual View Modes**: Table view for data analysis, Card view for visual browsing
 - **Real-time Filtering**: Filter by sport type and competition level
 
-## 🏆 Supported Sports & Levels
+## Supported Sports & Levels
 
 ### Sports Covered
 - Soccer, American Football, Basketball, Baseball
@@ -32,7 +28,7 @@ This project fulfills the requirement to build a GenAI-powered solution for spor
 - District, Corporate, College/University
 - Club/Academy, School
 
-## 📊 Output Format
+## Output Format
 
 The application provides tournament data in the required format:
 - **Tournament Name**
@@ -44,7 +40,7 @@ The application provides tournament data in the required format:
 - **Tournament Image**
 - **Summary** (AI-generated, max 50 words)
 
-## 🛠️ Technical Approach
+## Technical Approach
 
 ### System Design
 1. **Data Collection**: TheSportsDB API for real-world tournament data
@@ -65,7 +61,7 @@ The application provides tournament data in the required format:
 - **Caching Strategy**: Streamlit built-in caching for performance
 - **Modular Design**: Easy to extend with new sports/leagues
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.7+
@@ -86,7 +82,7 @@ streamlit run app.py
 
 The application will be available at `http://localhost:8501`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 SPORTS-CALENDER/
@@ -97,7 +93,7 @@ SPORTS-CALENDER/
 └── README.md          # This documentation
 ```
 
-## 🔧 Core Components
+## Core Components
 
 ### 1. Data Collection (`data.py`)
 - **API Integration**: TheSportsDB free API for tournament data
@@ -116,7 +112,7 @@ SPORTS-CALENDER/
 - **Data Validation**: Ensures complete tournament information
 - **Clean Architecture**: Modular and maintainable code
 
-## 📈 Sample Output
+## Sample Output
 
 ```json
 {
@@ -132,46 +128,16 @@ SPORTS-CALENDER/
 }
 ```
 
-## 🎯 Bonus Features Implemented
+## Bonus Features Implemented
 
-✅ **Web UI**: Full Streamlit application with interactive features  
-✅ **Export API**: CSV download functionality  
-✅ **Real-time Data**: Live API integration  
-✅ **AI Integration**: Automated summary generation  
-✅ **Responsive Design**: Works across devices  
+- **Web UI**: Full Streamlit application with interactive features  
+- **Export API**: CSV download functionality  
+- **Real-time Data**: Live API integration  
+- **AI Integration**: Automated summary generation  
+- **Responsive Design**: Works across devices  
 
-## ⚠️ Limitations & Future Improvements
 
-### Current Limitations
-- **API Dependency**: Limited to TheSportsDB free tier leagues
-- **Local Tournaments**: Currently focuses on major international leagues
-- **Storage**: In-memory processing (no persistent database)
-- **Real-time Updates**: Manual refresh required
-
-### Planned Improvements
-1. **Database Integration**: SQLite/MySQL for persistent storage
-2. **REST API**: Dedicated API endpoints (`GET /tournaments`)
-3. **Local Tournament Data**: Web scraping for regional events
-4. **Auto-refresh**: Scheduled data updates
-5. **Enhanced Filtering**: More granular search options
-
-## 🔗 API Endpoint (Future)
-
-```bash
-# Planned API structure
-GET /tournaments?sport=soccer&level=international
-GET /tournaments/export?format=csv
-POST /tournaments/refresh
-```
-
-## 🛡️ Error Handling
-
-- **Network Issues**: Graceful API failure handling
-- **Missing Data**: AI-generated fallback summaries
-- **Invalid Dates**: Automatic filtering and validation
-- **Model Loading**: Progressive enhancement for AI features
-
-## 📦 Dependencies
+## Dependencies
 
 - **streamlit**: Web application framework
 - **pandas**: Data manipulation and export
@@ -180,20 +146,3 @@ POST /tournaments/refresh
 - **torch**: Machine learning backend
 - **python-dateutil**: Date processing
 
-## 🤝 Assignment Compliance
-
-This project fully addresses the GenAI intern assignment requirements:
-- ✅ GenAI-powered tournament calendar
-- ✅ Multiple sports coverage
-- ✅ All competition levels
-- ✅ Required output format
-- ✅ Real-world upcoming data
-- ✅ AI-generated summaries
-- ✅ Web UI implementation
-- ✅ Export functionality
-
----
-
-**Built with ❤️ using Streamlit, TheSportsDB API, and HuggingFace Transformers**
-
-*GenAI Intern Assignment | Noida/Hybrid | 3-month Internship Path to Full Time*
